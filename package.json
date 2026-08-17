@@ -14,9 +14,10 @@
   },
   "scripts": {
     "build": "tsdown",
-    "format": "oxfmt --check",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
     "lint": "oxlint",
-    "prepublishOnly": "pnpm format && pnpm lint && pnpm typecheck && pnpm build",
+    "prepublishOnly": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm build",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

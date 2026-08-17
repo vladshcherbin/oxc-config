@@ -13,6 +13,7 @@ export default defineConfig({
   env: {
     browser: true
   },
+  jsPlugins: ['eslint-plugin-perfectionist'],
   options: {
     typeAware: true
   },
@@ -263,7 +264,9 @@ export default defineConfig({
     'eslint/require-await': 'off',
     'eslint/require-unicode-regexp': ['error', { requireFlag: 'v' }],
     'eslint/require-yield': 'error',
-    'eslint/sort-imports': ['error', { ignoreDeclarationSort: true }],
+    // Covered by perfectionist/sort-named-imports
+    'eslint/sort-imports': 'off',
+    // Covered by perfectionist/sort-objects
     'eslint/sort-keys': 'off',
     'eslint/sort-vars': 'off',
     'eslint/symbol-description': 'error',
@@ -273,8 +276,35 @@ export default defineConfig({
     'eslint/vars-on-top': 'error',
     'eslint/yoda': 'error',
 
+    // Perfectionist
+    'perfectionist/sort-array-includes': ['error', { type: 'natural' }],
+    'perfectionist/sort-arrays': 'off',
+    'perfectionist/sort-classes': ['error', { type: 'natural' }],
+    'perfectionist/sort-decorators': ['error', { type: 'natural' }],
+    'perfectionist/sort-enums': ['error', { type: 'natural' }],
+    'perfectionist/sort-export-attributes': ['error', { type: 'natural' }],
+    'perfectionist/sort-exports': ['error', { type: 'natural' }],
+    'perfectionist/sort-heritage-clauses': ['error', { type: 'natural' }],
+    'perfectionist/sort-import-attributes': ['error', { type: 'natural' }],
+    // Covered by the Oxfmt sortImports option
+    'perfectionist/sort-imports': 'off',
+    'perfectionist/sort-interfaces': ['error', { type: 'natural' }],
+    'perfectionist/sort-intersection-types': ['error', { type: 'natural' }],
+    'perfectionist/sort-jsx-props': 'off',
+    'perfectionist/sort-maps': ['error', { type: 'natural' }],
+    'perfectionist/sort-modules': 'off',
+    'perfectionist/sort-named-exports': ['error', { type: 'natural' }],
+    'perfectionist/sort-named-imports': ['error', { type: 'natural' }],
+    'perfectionist/sort-object-types': ['error', { type: 'natural' }],
+    'perfectionist/sort-objects': ['error', { type: 'natural' }],
+    'perfectionist/sort-sets': ['error', { type: 'natural' }],
+    'perfectionist/sort-switch-case': ['error', { type: 'natural' }],
+    'perfectionist/sort-union-types': ['error', { type: 'natural' }],
+    'perfectionist/sort-variable-declarations': ['error', { type: 'natural' }],
+
     // TypeScript
-    'typescript/adjacent-overload-signatures': 'error',
+    // Covered by perfectionist sort-interfaces, sort-object-types and sort-classes
+    'typescript/adjacent-overload-signatures': 'off',
     'typescript/array-type': 'error',
     'typescript/await-thenable': 'error',
     'typescript/ban-ts-comment': ['error', { 'ts-check': true, 'ts-expect-error': true }],

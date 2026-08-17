@@ -19,6 +19,9 @@
     "prepublishOnly": "pnpm format && pnpm lint && pnpm typecheck && pnpm build",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "eslint-plugin-perfectionist": "^5.10.1"
+  },
   "peerDependencies": {
     "oxfmt": "^0.63.0",
     "oxlint": "^1.78.0",

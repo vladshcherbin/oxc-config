@@ -1,3 +1,3 @@
-import config from './src/config.ts'
+import { node } from './src/index.ts'
 
-export default config
+export default node

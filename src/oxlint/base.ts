@@ -1,9 +1,9 @@
-import { defineConfig } from 'oxlint'
+import type { OxlintConfig } from 'oxlint'
 import eslint from './rules/eslint.ts'
 import perfectionist from './rules/perfectionist.ts'
 import typescript from './rules/typescript.ts'
 
-export default defineConfig({
+export default {
   categories: {
     correctness: 'off',
     nursery: 'off',
@@ -12,9 +12,6 @@ export default defineConfig({
     restriction: 'off',
     style: 'off',
     suspicious: 'off'
-  },
-  env: {
-    browser: true
   },
   jsPlugins: ['eslint-plugin-perfectionist'],
   options: {
@@ -26,4 +23,4 @@ export default defineConfig({
     ...perfectionist,
     ...typescript
   }
-})
+} satisfies OxlintConfig

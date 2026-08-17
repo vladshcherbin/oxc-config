@@ -8,8 +8,7 @@
     "url": "https://github.com/vladshcherbin/oxc-config.git"
   },
   "exports": {
-    "./config": "./dist/config.mjs",
-    "./format": "./dist/format.mjs",
+    ".": "./dist/index.mjs",
     "./package.json": "./package.json"
   },
   "scripts": {

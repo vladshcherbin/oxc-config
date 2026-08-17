@@ -13,15 +13,15 @@ npm install @shcherbin/oxc-config oxfmt oxlint oxlint-tsgolint -D
 Add `oxlint.config.ts`:
 
 ```ts
-import config from '@shcherbin/oxc-config/config'
+import { node } from '@shcherbin/oxc-config'
 
-export default config
+export default node
 ```
 
 Add `oxfmt.config.ts`:
 
 ```ts
-import format from '@shcherbin/oxc-config/format'
+import { format } from '@shcherbin/oxc-config'
 
 export default format
 ```

@@ -1,3 +1,3 @@
-import format from './src/format.ts'
+import { format } from './src/index.ts'
 
 export default format

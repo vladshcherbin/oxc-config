@@ -10,7 +10,9 @@ npm install @shcherbin/oxc-config oxfmt oxlint oxlint-tsgolint -D
 
 ## Usage
 
-Add `oxlint.config.ts`:
+### Node.js
+
+For Node.js apps and packages, add `oxlint.config.ts`:
 
 ```ts
 import { node } from '@shcherbin/oxc-config'
@@ -18,7 +20,19 @@ import { node } from '@shcherbin/oxc-config'
 export default node
 ```
 
-Add `oxfmt.config.ts`:
+### React
+
+For React apps, add `oxlint.config.ts`:
+
+```ts
+import { react } from '@shcherbin/oxc-config'
+
+export default react
+```
+
+### Formatter
+
+For all projects, add `oxfmt.config.ts`:
 
 ```ts
 import { format } from '@shcherbin/oxc-config'
@@ -51,6 +65,14 @@ Every existing rule of every plugin is declared — enabled ones as `error`, the
 | `eslint`        | 187   | 187      | 146     |
 | `typescript`    | 110   | 110      | 92      |
 | `perfectionist` | 23    | 23       | 19      |
+
+The `react` config assumes the React Compiler and additionally declares:
+
+| Plugin       | Rules | Declared | Enabled |
+| ------------ | ----- | -------- | ------- |
+| `react`      | 64    | 64       | 38      |
+| `jsx-a11y`   | 36    | 36       | 34      |
+| `react-perf` | 4     | 4        | 0       |
 
 ## License
 

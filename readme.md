@@ -5,7 +5,7 @@ Shareable Oxlint and Oxfmt configs with strict rules.
 ## Install
 
 ```sh
-npm install @shcherbin/oxc-config oxlint oxlint-tsgolint oxfmt -D
+npm install @shcherbin/oxc-config oxfmt oxlint oxlint-tsgolint -D
 ```
 
 ## Usage
@@ -31,7 +31,8 @@ Add scripts to `package.json`:
 ```json
 {
   "scripts": {
-    "format": "oxfmt --check",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
     "lint": "oxlint"
   }
 }

@@ -41,6 +41,16 @@ Type-aware rules are enabled out of the box and run through `oxlint-tsgolint`.
 
 Export the configs directly as shown above — wrapping them in `extends` currently loses `env` and rule options in Oxlint.
 
+## Rules
+
+Every existing rule of every plugin is declared — enabled ones as `error`, the rest as `off` with a reason.
+
+| Plugin          | Rules | Declared | Enabled |
+| --------------- | ----- | -------- | ------- |
+| `eslint`        | 187   | 187      | 146     |
+| `typescript`    | 110   | 110      | 92      |
+| `perfectionist` | 23    | 23       | 19      |
+
 ## License
 
 MIT

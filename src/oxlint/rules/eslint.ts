@@ -132,7 +132,8 @@ export default {
   'eslint/no-object-constructor': 'error',
   'eslint/no-param-reassign': ['error', { props: true }],
   'eslint/no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
-  'eslint/no-promise-executor-return': 'error',
+  // Covered by no-confusing-void-expression and strict-void-return
+  'eslint/no-promise-executor-return': 'off',
   'eslint/no-proto': 'error',
   'eslint/no-prototype-builtins': 'error',
   // Handled by TypeScript, the remaining same-type var case is covered by no-var

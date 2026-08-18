@@ -42,6 +42,17 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "oxlint",
+    "oxfmt",
+    "oxc",
+    "config",
+    "linter",
+    "formatter",
+    "node",
+    "react",
+    "typescript"
+  ],
   "engines": {
     "node": ">= 26"
   },

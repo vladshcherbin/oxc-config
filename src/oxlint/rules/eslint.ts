@@ -39,7 +39,8 @@ export default {
   'eslint/new-cap': 'error',
   'eslint/no-alert': 'error',
   'eslint/no-array-constructor': 'error',
-  'eslint/no-async-promise-executor': 'error',
+  // Covered by strict-void-return, which bans promise-returning executors
+  'eslint/no-async-promise-executor': 'off',
   'eslint/no-await-in-loop': 'off',
   'eslint/no-bitwise': 'error',
   'eslint/no-caller': 'error',

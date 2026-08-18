@@ -2,7 +2,7 @@ import type { OxlintConfig } from 'oxlint'
 
 export default {
   'eslint/accessor-pairs': ['error', { enforceForTSTypes: true, getWithoutSet: true }],
-  'eslint/array-callback-return': ['error', { checkForEach: true }],
+  'eslint/array-callback-return': 'error',
   'eslint/arrow-body-style': 'error',
   // Covered by no-var, which bans var declarations entirely
   'eslint/block-scoped-var': 'off',

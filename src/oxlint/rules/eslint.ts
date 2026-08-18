@@ -4,7 +4,8 @@ export default {
   'eslint/accessor-pairs': ['error', { enforceForTSTypes: true, getWithoutSet: true }],
   'eslint/array-callback-return': ['error', { checkForEach: true }],
   'eslint/arrow-body-style': 'error',
-  'eslint/block-scoped-var': 'error',
+  // Covered by no-var, which bans var declarations entirely
+  'eslint/block-scoped-var': 'off',
   'eslint/capitalized-comments': 'error',
   'eslint/class-methods-use-this': 'error',
   'eslint/complexity': 'off',
@@ -92,7 +93,8 @@ export default {
   // Handled by TypeScript
   'eslint/no-import-assign': 'off',
   'eslint/no-inline-comments': 'error',
-  'eslint/no-inner-declarations': ['error', 'both', { blockScopedFunctions: 'disallow', namespaces: 'disallow' }],
+  // Covered by no-var, which bans var declarations entirely
+  'eslint/no-inner-declarations': ['error', 'functions', { blockScopedFunctions: 'disallow', namespaces: 'disallow' }],
   'eslint/no-invalid-regexp': 'error',
   'eslint/no-irregular-whitespace': [
     'error',
@@ -257,6 +259,7 @@ export default {
   'eslint/unicode-bom': 'error',
   'eslint/use-isnan': ['error', { enforceForIndexOf: true }],
   'eslint/valid-typeof': ['error', { requireStringLiterals: true }],
-  'eslint/vars-on-top': 'error',
+  // Covered by no-var, which bans var declarations entirely
+  'eslint/vars-on-top': 'off',
   'eslint/yoda': 'error'
 } satisfies OxlintConfig['rules']

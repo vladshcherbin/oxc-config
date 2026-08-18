@@ -172,7 +172,8 @@ export default {
   'eslint/no-this-before-super': 'off',
   // Deprecated, superseded by the type-aware typescript/only-throw-error
   'eslint/no-throw-literal': 'off',
-  'eslint/no-unassigned-vars': 'error',
+  // Covered by init-declarations, which requires initializers
+  'eslint/no-unassigned-vars': 'off',
   // Handled by TypeScript
   'eslint/no-undef': 'off',
   'eslint/no-undefined': 'error',

@@ -62,7 +62,7 @@ Every existing rule of every plugin is declared — enabled ones as `error`, the
 
 | Plugin          | Rules | Declared | Enabled |
 | --------------- | ----- | -------- | ------- |
-| `eslint`        | 187   | 187      | 141     |
+| `eslint`        | 187   | 187      | 140     |
 | `typescript`    | 110   | 110      | 92      |
 | `perfectionist` | 23    | 23       | 19      |
 

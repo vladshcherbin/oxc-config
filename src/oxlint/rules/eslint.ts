@@ -79,7 +79,8 @@ export default {
   'eslint/no-extend-native': 'error',
   'eslint/no-extra-bind': 'error',
   'eslint/no-extra-boolean-cast': ['error', { enforceForInnerExpressions: true }],
-  'eslint/no-extra-label': 'error',
+  // Covered by no-labels, which bans labels entirely
+  'eslint/no-extra-label': 'off',
   'eslint/no-fallthrough': ['error', { reportUnusedFallthroughComment: true }],
   // Handled by TypeScript
   'eslint/no-func-assign': 'off',
@@ -104,7 +105,8 @@ export default {
     }
   ],
   'eslint/no-iterator': 'error',
-  'eslint/no-label-var': 'error',
+  // Covered by no-labels, which bans labels entirely
+  'eslint/no-label-var': 'off',
   'eslint/no-labels': 'error',
   'eslint/no-lone-blocks': 'error',
   'eslint/no-lonely-if': 'error',
@@ -193,7 +195,8 @@ export default {
   'eslint/no-unsafe-negation': 'off',
   'eslint/no-unsafe-optional-chaining': ['error', { disallowArithmeticOperators: true }],
   'eslint/no-unused-expressions': ['error', { enforceForJSX: true }],
-  'eslint/no-unused-labels': 'error',
+  // Covered by no-labels, which bans labels entirely
+  'eslint/no-unused-labels': 'off',
   'eslint/no-unused-private-class-members': 'error',
   'eslint/no-unused-vars': ['error', { args: 'all', ignoreRestSiblings: true, reportVarsOnlyUsedAsTypes: true }],
   'eslint/no-use-before-define': ['error', { ignoreTypeReferences: false }],

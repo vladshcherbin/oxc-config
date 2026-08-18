@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      confusing-browser-globals:
+        specifier: ^1.0.11
+        version: 1.0.11
       eslint-plugin-perfectionist:
         specifier: ^5.10.1
         version: 5.10.1(eslint@10.8.1)(typescript@6.0.3)
@@ -15,6 +18,9 @@ importers:
       '@shcherbin/typescript-config':
         specifier: ^1.0.0
         version: 1.0.0(typescript@6.0.3)
+      '@types/confusing-browser-globals':
+        specifier: ^1.0.3
+        version: 1.0.3
       '@types/node':
         specifier: ^26.2.0
         version: 26.2.0
@@ -464,6 +470,9 @@ packages:
     peerDependencies:
       typescript: ^6.0.0
 
+  '@types/confusing-browser-globals@1.0.3':
+    resolution: {integrity: sha512-q+6axdE3RyjrSsy2ONE4UpF89rwOfpoMBP3lqJ+OzLuOeYHwP+o2GITzuleKb1UT3FSYybO8QmeACgyHleu2CA==}
+
   '@types/esrecurse@4.3.1':
     resolution: {integrity: sha512-xJBAbDifo5hpffDBuHl0Y8ywswbiAp/Wi7Y/GtAgSlZyIABppyurxVueOPE8LUQOxdlgi6Zqce7uoEpqNTeiUw==}
 
@@ -676,6 +685,9 @@ packages:
   cac@7.0.0:
     resolution: {integrity: sha512-tixWYgm5ZoOD+3g6UTea91eow5z6AAHaho3g0V9CNSNb45gM8SmflpAc+GRd1InC4AqN/07Unrgp56Y94N9hJQ==}
     engines: {node: '>=20.19.0'}
+
+  confusing-browser-globals@1.0.11:
+    resolution: {integrity: sha512-JsPKdmh8ZkmnHxDk55FZ1TqVLvEQTvoByJZRN9jzI0UjxK/QgAmsphz7PGtqgPieQZ/CQcHWXCR7ATDNhGe+YA==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -1305,6 +1317,8 @@ snapshots:
     dependencies:
       typescript: 6.0.3
 
+  '@types/confusing-browser-globals@1.0.3': {}
+
   '@types/esrecurse@4.3.1': {}
 
   '@types/estree@1.0.9': {}
@@ -1462,6 +1476,8 @@ snapshots:
       balanced-match: 4.0.4
 
   cac@7.0.0: {}
+
+  confusing-browser-globals@1.0.11: {}
 
   cross-spawn@7.0.6:
     dependencies:

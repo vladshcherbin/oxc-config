@@ -198,7 +198,8 @@ export default {
   'eslint/no-unsafe-finally': 'error',
   // Handled by TypeScript
   'eslint/no-unsafe-negation': 'off',
-  'eslint/no-unsafe-optional-chaining': ['error', { disallowArithmeticOperators: true }],
+  // Handled by TypeScript
+  'eslint/no-unsafe-optional-chaining': 'off',
   'eslint/no-unused-expressions': ['error', { enforceForJSX: true }],
   // Covered by no-labels, which bans labels entirely
   'eslint/no-unused-labels': 'off',

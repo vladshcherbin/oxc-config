@@ -147,13 +147,7 @@ export default {
   'typescript/return-await': 'error',
   'typescript/strict-boolean-expressions': 'off',
   'typescript/strict-void-return': 'error',
-  'typescript/switch-exhaustiveness-check': [
-    'error',
-    {
-      allowDefaultCaseForExhaustiveSwitch: false,
-      requireDefaultForNonUnion: true
-    }
-  ],
+  'typescript/switch-exhaustiveness-check': 'error',
   'typescript/triple-slash-reference': ['error', { lib: 'never', types: 'never' }],
   'typescript/unbound-method': 'error',
   'typescript/unified-signatures': 'error',

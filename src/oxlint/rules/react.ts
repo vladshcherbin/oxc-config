@@ -10,10 +10,7 @@ export default {
   'react/forbid-elements': 'off',
   // Deprecated in React 19
   'react/forward-ref-uses-ref': 'off',
-  'react/function-component-definition': [
-    'error',
-    { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' }
-  ],
+  'react/function-component-definition': ['error', { unnamedComponents: 'arrow-function' }],
   'react/hook-use-state': 'error',
   'react/iframe-missing-sandbox': 'error',
   'react/jsx-boolean-value': 'error',

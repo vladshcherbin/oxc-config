@@ -132,7 +132,7 @@ export default {
   'no-object-constructor': 'error',
   'no-param-reassign': ['error', { props: true }],
   'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
-  // Covered by no-confusing-void-expression and strict-void-return
+  // Covered by no-confusing-void-expression, no-undefined, no-void and strict-void-return
   'no-promise-executor-return': 'off',
   'no-proto': 'error',
   'no-prototype-builtins': 'error',
@@ -148,7 +148,6 @@ export default {
   ],
   'no-restricted-globals': ['error', { checkGlobalObject: true, globals: ['isFinite', 'isNaN'] }],
   'no-restricted-imports': 'off',
-  // Covered by no-restricted-globals, which also checks the global object
   'no-restricted-properties': 'off',
   'no-return-assign': ['error', 'always'],
   'no-script-url': 'error',
@@ -254,10 +253,11 @@ export default {
   'require-await': 'off',
   'require-unicode-regexp': ['error', { requireFlag: 'v' }],
   'require-yield': 'error',
-  // Covered by perfectionist/sort-imports
+  // Covered by perfectionist sort-imports and sort-named-imports
   'sort-imports': 'off',
   // Covered by perfectionist/sort-objects
   'sort-keys': 'off',
+  // Covered by perfectionist/sort-variable-declarations
   'sort-vars': 'off',
   'symbol-description': 'error',
   'unicode-bom': 'error',

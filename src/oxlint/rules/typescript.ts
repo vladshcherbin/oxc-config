@@ -1,7 +1,7 @@
 import type { OxlintConfig } from 'oxlint'
 
 export default {
-  // Covered by perfectionist sort-interfaces, sort-object-types and sort-classes
+  // Covered by perfectionist sort-classes, sort-interfaces and sort-object-types
   'typescript/adjacent-overload-signatures': 'off',
   'typescript/array-type': 'error',
   'typescript/await-thenable': 'error',

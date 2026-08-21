@@ -58,7 +58,7 @@ The `tanstack` config assumes the React Compiler and additionally declares:
 
 | Plugin       | Rules | Declared | Enabled |
 | ------------ | ----- | -------- | ------- |
-| `react`      | 64    | 64       | 38      |
+| `react`      | 64    | 64       | 37      |
 | `jsx-a11y`   | 36    | 36       | 34      |
 | `react-perf` | 4     | 4        | 0       |
 

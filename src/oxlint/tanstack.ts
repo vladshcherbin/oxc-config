@@ -29,8 +29,12 @@ export default defineConfig({
         ignoreTypeValueShadow: false
       }
     ],
+    // Extended to allow components below their route definitions
+    'no-use-before-define': ['error', { functions: false, ignoreTypeReferences: false }],
     // Extended to allow voiding non-awaited loader promises
     'no-void': ['error', { allowAsStatement: true }],
+    // Violated by route files, which export Route alongside a local component
+    'react/only-export-components': 'off',
     // Extended to allow void-marked promises
     'typescript/no-floating-promises': ['error', { checkThenables: true }],
     // Catches meaningless voids, which the extended no-void allows

@@ -28,6 +28,12 @@ export default defineConfig({
         ignoreFunctionTypeParameterNameValueShadow: false,
         ignoreTypeValueShadow: false
       }
-    ]
+    ],
+    // Extended to allow voiding non-awaited loader promises
+    'no-void': ['error', { allowAsStatement: true }],
+    // Extended to allow void-marked promises
+    'typescript/no-floating-promises': ['error', { checkThenables: true }],
+    // Catches meaningless voids, which the extended no-void allows
+    'typescript/no-meaningless-void-operator': ['error', { checkNever: true }]
   }
 })

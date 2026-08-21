@@ -20,14 +20,14 @@ import { node } from '@shcherbin/oxc-config'
 export default node
 ```
 
-### React
+### TanStack Start
 
-For React apps, add `oxlint.config.ts`:
+For TanStack Start apps, add `oxlint.config.ts`:
 
 ```ts
-import { react } from '@shcherbin/oxc-config'
+import { tanstack } from '@shcherbin/oxc-config'
 
-export default react
+export default tanstack
 ```
 
 Add a script to `package.json`:
@@ -54,7 +54,7 @@ Every existing rule of every plugin is declared — enabled ones as `error`, the
 | `typescript`    | 110   | 110      | 92      |
 | `perfectionist` | 23    | 23       | 20      |
 
-The `react` config assumes the React Compiler and additionally declares:
+The `tanstack` config assumes the React Compiler and additionally declares:
 
 | Plugin       | Rules | Declared | Enabled |
 | ------------ | ----- | -------- | ------- |

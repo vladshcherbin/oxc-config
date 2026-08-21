@@ -6,7 +6,7 @@ export default {
   'arrow-body-style': 'error',
   // Covered by no-var, which bans var declarations entirely
   'block-scoped-var': 'off',
-  'capitalized-comments': 'error',
+  'capitalized-comments': 'off',
   'class-methods-use-this': 'error',
   'complexity': 'off',
   // Handled by TypeScript

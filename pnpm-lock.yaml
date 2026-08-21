@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@stylistic/eslint-plugin':
+        specifier: 6.0.0-beta.5
+        version: 6.0.0-beta.5(eslint@10.8.1)(oxlint@1.78.0(oxlint-tsgolint@7.0.2001))
       confusing-browser-globals:
         specifier: ^1.0.11
         version: 1.0.11
@@ -344,6 +347,18 @@ packages:
     resolution: {integrity: sha512-jGc30QaXU1DbAOA81gM0MI7Bl4MR7Q74wJCDeIZdUUlMKqW9OmAe119G3Yn1rv2kyrBy3xN7rWc22DRvSc/xVg==}
     peerDependencies:
       typescript: ^6.0.0
+
+  '@stylistic/eslint-plugin@6.0.0-beta.5':
+    resolution: {integrity: sha512-btnADqshVig5JFt1haC/NykFU5nHiSAc86j/WAKTLjcu9kuWgBm7YaU4pAArOzedYE5mGtE2iCazlFwjQJIdDA==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+    peerDependencies:
+      eslint: ^9.0.0 || ^10.0.0
+      oxlint: ^1.55.0
+    peerDependenciesMeta:
+      eslint:
+        optional: true
+      oxlint:
+        optional: true
 
   '@types/confusing-browser-globals@1.0.3':
     resolution: {integrity: sha512-q+6axdE3RyjrSsy2ONE4UpF89rwOfpoMBP3lqJ+OzLuOeYHwP+o2GITzuleKb1UT3FSYybO8QmeACgyHleu2CA==}
@@ -1117,6 +1132,17 @@ snapshots:
   '@shcherbin/typescript-config@1.0.0(typescript@6.0.3)':
     dependencies:
       typescript: 6.0.3
+
+  '@stylistic/eslint-plugin@6.0.0-beta.5(eslint@10.8.1)(oxlint@1.78.0(oxlint-tsgolint@7.0.2001))':
+    dependencies:
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.8.1)
+      '@typescript-eslint/types': 8.67.0
+      '@typescript-eslint/visitor-keys': 8.67.0
+      espree: 11.2.0
+      picomatch: 4.0.5
+    optionalDependencies:
+      eslint: 10.8.1
+      oxlint: 1.78.0(oxlint-tsgolint@7.0.2001)
 
   '@types/confusing-browser-globals@1.0.3': {}
 

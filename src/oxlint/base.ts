@@ -1,6 +1,7 @@
 import type { OxlintConfig } from 'oxlint'
 import eslint from './rules/eslint.ts'
 import perfectionist from './rules/perfectionist.ts'
+import stylistic from './rules/stylistic.ts'
 import typescript from './rules/typescript.ts'
 
 export default {
@@ -13,7 +14,10 @@ export default {
     style: 'off',
     suspicious: 'off'
   },
-  jsPlugins: ['eslint-plugin-perfectionist'],
+  jsPlugins: [
+    '@stylistic/eslint-plugin',
+    'eslint-plugin-perfectionist'
+  ],
   options: {
     typeAware: true
   },
@@ -21,6 +25,7 @@ export default {
   rules: {
     ...eslint,
     ...perfectionist,
+    ...stylistic,
     ...typescript
   }
 } satisfies OxlintConfig

@@ -4,6 +4,7 @@ import base from './base.ts'
 import jsxA11y from './rules/jsx-a11y.ts'
 import reactPerf from './rules/react-perf.ts'
 import react from './rules/react.ts'
+import stylisticJsx from './rules/stylistic-jsx.ts'
 
 export default defineConfig({
   ...base,
@@ -16,6 +17,7 @@ export default defineConfig({
     ...jsxA11y,
     ...react,
     ...reactPerf,
+    ...stylisticJsx,
     // Extended with browser globals, which lib.dom legalizes for bare use
     'no-restricted-globals': ['error', { globals: ['isFinite', 'isNaN', ...confusingBrowserGlobals] }],
     // Covered by no-restricted-globals, which bans bare use of the allowed browser globals

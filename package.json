@@ -1,6 +1,6 @@
 {
   "name": "@shcherbin/oxc-config",
-  "description": "Shareable Oxlint and Oxfmt configs",
+  "description": "Shareable Oxlint configs",
   "version": "0.1.0",
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": {
@@ -13,10 +13,8 @@
   },
   "scripts": {
     "build": "tsdown",
-    "format": "oxfmt",
-    "format:check": "oxfmt --check",
     "lint": "oxlint",
-    "prepublishOnly": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm build",
+    "prepublishOnly": "pnpm lint && pnpm typecheck && pnpm build",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -24,7 +22,6 @@
     "eslint-plugin-perfectionist": "^5.10.1"
   },
   "peerDependencies": {
-    "oxfmt": "^0.63.0",
     "oxlint": "^1.78.0",
     "oxlint-tsgolint": "^7.0.2001",
     "typescript": "^6.0.3"
@@ -33,7 +30,6 @@
     "@shcherbin/typescript-config": "^1.0.0",
     "@types/confusing-browser-globals": "^1.0.3",
     "@types/node": "^26.2.0",
-    "oxfmt": "^0.63.0",
     "oxlint": "^1.78.0",
     "oxlint-tsgolint": "^7.0.2001",
     "tsdown": "^0.22.14",
@@ -44,11 +40,9 @@
   ],
   "keywords": [
     "oxlint",
-    "oxfmt",
     "oxc",
     "config",
     "linter",
-    "formatter",
     "node",
     "react",
     "typescript"

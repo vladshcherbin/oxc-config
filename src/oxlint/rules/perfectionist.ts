@@ -10,8 +10,7 @@ export default {
   'perfectionist/sort-exports': ['error', { type: 'natural' }],
   'perfectionist/sort-heritage-clauses': ['error', { type: 'natural' }],
   'perfectionist/sort-import-attributes': ['error', { type: 'natural' }],
-  // Covered by the Oxfmt sortImports option
-  'perfectionist/sort-imports': 'off',
+  'perfectionist/sort-imports': ['error', { newlinesBetween: 0, type: 'natural' }],
   'perfectionist/sort-interfaces': ['error', { type: 'natural' }],
   'perfectionist/sort-intersection-types': ['error', { type: 'natural' }],
   'perfectionist/sort-jsx-props': 'off',

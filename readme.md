@@ -1,11 +1,11 @@
 # `@shcherbin/oxc-config`
 
-Shareable Oxlint and Oxfmt configs with strict rules.
+Shareable Oxlint configs with strict rules.
 
 ## Install
 
 ```sh
-npm install @shcherbin/oxc-config oxfmt oxlint oxlint-tsgolint -D
+npm install @shcherbin/oxc-config oxlint oxlint-tsgolint -D
 ```
 
 ## Usage
@@ -30,23 +30,11 @@ import { react } from '@shcherbin/oxc-config'
 export default react
 ```
 
-### Formatter
-
-For all projects, add `oxfmt.config.ts`:
-
-```ts
-import { format } from '@shcherbin/oxc-config'
-
-export default format
-```
-
-Add scripts to `package.json`:
+Add a script to `package.json`:
 
 ```json
 {
   "scripts": {
-    "format": "oxfmt",
-    "format:check": "oxfmt --check",
     "lint": "oxlint"
   }
 }
@@ -64,7 +52,7 @@ Every existing rule of every plugin is declared — enabled ones as `error`, the
 | --------------- | ----- | -------- | ------- |
 | `eslint`        | 187   | 187      | 137     |
 | `typescript`    | 110   | 110      | 92      |
-| `perfectionist` | 23    | 23       | 19      |
+| `perfectionist` | 23    | 23       | 20      |
 
 The `react` config assumes the React Compiler and additionally declares:
 

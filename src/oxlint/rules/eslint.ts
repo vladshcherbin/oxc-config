@@ -254,7 +254,7 @@ export default {
   'eslint/require-await': 'off',
   'eslint/require-unicode-regexp': ['error', { requireFlag: 'v' }],
   'eslint/require-yield': 'error',
-  // Covered by perfectionist/sort-named-imports
+  // Covered by perfectionist/sort-imports
   'eslint/sort-imports': 'off',
   // Covered by perfectionist/sort-objects
   'eslint/sort-keys': 'off',

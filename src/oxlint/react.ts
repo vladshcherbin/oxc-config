@@ -17,9 +17,9 @@ export default defineConfig({
     ...react,
     ...reactPerf,
     // Extended with browser globals, which lib.dom legalizes for bare use
-    'eslint/no-restricted-globals': ['error', { globals: ['isFinite', 'isNaN', ...confusingBrowserGlobals] }],
+    'no-restricted-globals': ['error', { globals: ['isFinite', 'isNaN', ...confusingBrowserGlobals] }],
     // Covered by no-restricted-globals, which bans bare use of the allowed browser globals
-    'eslint/no-shadow': [
+    'no-shadow': [
       'error',
       {
         allow: confusingBrowserGlobals,

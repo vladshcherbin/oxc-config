@@ -14,7 +14,7 @@ export default {
   'react/hook-use-state': 'error',
   'react/iframe-missing-sandbox': 'error',
   'react/jsx-boolean-value': 'error',
-  'react/jsx-curly-brace-presence': 'error',
+  'react/jsx-curly-brace-presence': ['error', { propElementValues: 'always' }],
   'react/jsx-filename-extension': ['error', { extensions: ['tsx'] }],
   'react/jsx-fragments': 'error',
   'react/jsx-handler-names': ['error', { checkInlineFunction: true, checkLocalVariables: true }],

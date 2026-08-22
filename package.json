@@ -23,7 +23,7 @@
     "eslint-plugin-perfectionist": "^5.10.1"
   },
   "peerDependencies": {
-    "oxlint": "^1.78.0",
+    "oxlint": "^1.79.0",
     "oxlint-tsgolint": "^7.0.2001",
     "typescript": "^6.0.3"
   },
@@ -31,7 +31,7 @@
     "@shcherbin/typescript-config": "^1.0.0",
     "@types/confusing-browser-globals": "^1.0.3",
     "@types/node": "^26.2.0",
-    "oxlint": "^1.78.0",
+    "oxlint": "^1.79.0",
     "oxlint-tsgolint": "^7.0.2001",
     "tsdown": "^0.22.14",
     "typescript": "^6.0.3"

@@ -58,7 +58,7 @@ Every existing rule of every plugin is declared — enabled ones as `error`, the
 | `jsx-a11y`      | 36 / 36   | —      | 34         |
 | `react-perf`    | 4 / 4     | —      | 0          |
 
-The `tanstack` config assumes the React Compiler.
+The `tanstack` config assumes the React Compiler is set up in the app.
 
 ## License
 

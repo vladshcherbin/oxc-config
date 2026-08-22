@@ -2,17 +2,27 @@ import type { OxlintConfig } from 'oxlint'
 
 export default {
   'react/button-has-type': 'error',
+  // Covered by new-cap, except calls through lowercase aliases
+  'react/capitalized-calls': 'off',
   'react/checked-requires-onchange-or-readonly': 'error',
   'react/display-name': ['error', { checkContextObjects: true }],
+  'react/error-boundaries': 'error',
   'react/exhaustive-deps': 'error',
+  'react/exhaustive-effect-dependencies': 'error',
   'react/forbid-component-props': 'off',
   'react/forbid-dom-props': 'off',
   'react/forbid-elements': 'off',
   // Deprecated in React 19
   'react/forward-ref-uses-ref': 'off',
   'react/function-component-definition': ['error', { unnamedComponents: 'arrow-function' }],
+  'react/globals': 'error',
   'react/hook-use-state': 'error',
+  // Covered by rules-of-hooks, except first-class hook usage
+  'react/hooks': 'off',
   'react/iframe-missing-sandbox': 'error',
+  'react/immutability': 'error',
+  'react/incompatible-library': 'error',
+  'react/invariant': 'error',
   'react/jsx-boolean-value': 'error',
   'react/jsx-curly-brace-presence': ['error', { propElementValues: 'always' }],
   'react/jsx-filename-extension': ['error', { extensions: ['tsx'] }],
@@ -21,7 +31,7 @@ export default {
   'react/jsx-key': 'error',
   'react/jsx-max-depth': 'off',
   'react/jsx-no-comment-textnodes': 'error',
-  // Superseded by react-compiler, which memoizes render values
+  // Superseded by the React Compiler, which memoizes render values
   'react/jsx-no-constructed-context-values': 'off',
   'react/jsx-no-duplicate-props': 'error',
   'react/jsx-no-literals': 'off',
@@ -33,11 +43,15 @@ export default {
   'react/jsx-pascal-case': 'error',
   'react/jsx-props-no-spread-multi': 'error',
   'react/jsx-props-no-spreading': 'off',
+  // Covered by exhaustive-deps, which also checks memo hook dependencies
+  'react/memo-dependencies': 'off',
   'react/no-array-index-key': 'error',
   'react/no-children-prop': 'error',
   'react/no-clone-element': 'error',
   'react/no-danger': 'error',
   'react/no-danger-with-children': 'error',
+  // Covered by set-state-in-effect, which reports the same calls
+  'react/no-deriving-state-in-effects': 'off',
   // Covered by prefer-function-component, which bans class components
   'react/no-did-mount-set-state': 'off',
   // Covered by prefer-function-component, which bans class components
@@ -50,7 +64,7 @@ export default {
   'react/no-is-mounted': 'off',
   'react/no-multi-comp': 'error',
   'react/no-namespace': 'error',
-  // Superseded by react-compiler, which memoizes render values
+  // Superseded by the React Compiler, which memoizes render values
   'react/no-object-type-as-default-prop': 'off',
   'react/no-react-children': 'error',
   // Covered by prefer-function-component, which bans class components
@@ -74,15 +88,26 @@ export default {
   // Removed in React 16
   'react/prefer-es6-class': 'off',
   'react/prefer-function-component': 'error',
-  'react/react-compiler': ['error', { reportAllBailouts: true }],
+  'react/preserve-manual-memoization': 'error',
+  'react/purity': 'error',
   // Superseded by the new JSX transform
   'react/react-in-jsx-scope': 'off',
+  'react/refs': 'error',
   // Covered by prefer-function-component, which bans class components
   'react/require-render-return': 'off',
+  'react/rule-suppression': 'error',
   'react/rules-of-hooks': 'error',
   'react/self-closing-comp': 'error',
+  'react/set-state-in-effect': 'error',
+  'react/set-state-in-render': 'error',
   // Covered by prefer-function-component, which bans class components
   'react/state-in-constructor': 'off',
+  'react/static-components': 'error',
   'react/style-prop-object': 'error',
-  'react/void-dom-elements-no-children': 'error'
+  'react/syntax': 'error',
+  'react/todo': 'error',
+  'react/unsupported-syntax': 'error',
+  'react/use-memo': 'error',
+  'react/void-dom-elements-no-children': 'error',
+  'react/void-use-memo': 'error'
 } satisfies OxlintConfig['rules']

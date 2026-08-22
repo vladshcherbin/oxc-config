@@ -54,7 +54,7 @@ Every existing rule of every plugin is declared — enabled ones as `error`, the
 | `typescript`    | 110   | 92     | 93         |
 | `perfectionist` | 23    | 20     | 20         |
 | `stylistic`     | 96    | 65     | 80         |
-| `react`         | 64    | —      | 37         |
+| `react`         | 85    | —      | 54         |
 | `jsx-a11y`      | 36    | —      | 34         |
 | `react-perf`    | 4     | —      | 0          |
 

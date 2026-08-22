@@ -100,7 +100,6 @@ export default {
   'no-irregular-whitespace': [
     'error',
     {
-      skipComments: false,
       skipJSXText: false,
       skipRegExps: false,
       skipStrings: false,

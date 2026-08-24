@@ -14,7 +14,7 @@ export default {
   '@stylistic/comma-style': 'error',
   '@stylistic/computed-property-spacing': 'error',
   '@stylistic/curly-newline': ['error', 'always'],
-  '@stylistic/dot-location': ['error', 'property'],
+  '@stylistic/dot-location': 'error',
   '@stylistic/eol-last': 'error',
   '@stylistic/exp-list-style': 'off',
   '@stylistic/function-call-argument-newline': ['error', 'consistent'],

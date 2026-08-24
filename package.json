@@ -18,7 +18,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "6.0.0-beta.5",
+    "@stylistic/eslint-plugin": "6.0.0-beta.6",
     "confusing-browser-globals": "^1.0.11",
     "eslint-plugin-perfectionist": "^5.10.1"
   },
@@ -28,7 +28,7 @@
     "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@shcherbin/typescript-config": "^1.0.0",
+    "@shcherbin/typescript-config": "^1.1.0",
     "@types/confusing-browser-globals": "^1.0.3",
     "@types/node": "^26.2.0",
     "oxlint": "^1.79.0",

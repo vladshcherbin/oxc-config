@@ -7,7 +7,7 @@ export default {
   '@stylistic/jsx-closing-tag-location': ['error', 'line-aligned'],
   // Covered by react/jsx-curly-brace-presence
   '@stylistic/jsx-curly-brace-presence': 'off',
-  '@stylistic/jsx-curly-newline': ['error', { singleline: 'forbid' }],
+  '@stylistic/jsx-curly-newline': 'error',
   '@stylistic/jsx-curly-spacing': ['error', { children: true }],
   '@stylistic/jsx-equals-spacing': 'error',
   '@stylistic/jsx-first-prop-new-line': ['error', 'multiline'],

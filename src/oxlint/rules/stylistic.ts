@@ -1,9 +1,12 @@
 import type { OxlintConfig } from 'oxlint'
 
 export default {
-  '@stylistic/array-bracket-newline': 'error',
-  '@stylistic/array-bracket-spacing': 'error',
-  '@stylistic/array-element-newline': ['error', { consistent: true, multiline: true }],
+  // Deprecated, superseded by list-style
+  '@stylistic/array-bracket-newline': 'off',
+  // Deprecated, superseded by list-style
+  '@stylistic/array-bracket-spacing': 'off',
+  // Deprecated, superseded by list-style
+  '@stylistic/array-element-newline': 'off',
   '@stylistic/arrow-parens': 'error',
   '@stylistic/arrow-spacing': 'error',
   // Covered by curly-newline and no-inline-comments, which force line breaks inside braces and ban inline comments
@@ -16,10 +19,11 @@ export default {
   '@stylistic/curly-newline': ['error', 'always'],
   '@stylistic/dot-location': 'error',
   '@stylistic/eol-last': 'error',
-  '@stylistic/exp-list-style': 'off',
-  '@stylistic/function-call-argument-newline': ['error', 'consistent'],
+  // Deprecated, superseded by list-style
+  '@stylistic/function-call-argument-newline': 'off',
   '@stylistic/function-call-spacing': 'error',
-  '@stylistic/function-paren-newline': ['error', 'multiline-arguments'],
+  // Deprecated, superseded by list-style
+  '@stylistic/function-paren-newline': 'off',
   '@stylistic/generator-star-spacing': ['error', 'after'],
   '@stylistic/implicit-arrow-linebreak': 'error',
   '@stylistic/indent': ['error', 2, { offsetTernaryExpressions: true }],
@@ -31,6 +35,7 @@ export default {
   '@stylistic/linebreak-style': 'error',
   '@stylistic/lines-around-comment': 'off',
   '@stylistic/lines-between-class-members': 'error',
+  '@stylistic/list-style': ['error', { empty: 'never', multiLine: { minItems: 1 } }],
   '@stylistic/max-len': [
     'error',
     {
@@ -68,9 +73,12 @@ export default {
   '@stylistic/no-whitespace-before-property': 'error',
   // Covered by curly, which requires braces
   '@stylistic/nonblock-statement-body-position': 'off',
-  '@stylistic/object-curly-newline': ['error', { consistent: true, multiline: true }],
-  '@stylistic/object-curly-spacing': ['error', 'always', { emptyObjects: 'never' }],
-  '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
+  // Deprecated, superseded by list-style
+  '@stylistic/object-curly-newline': 'off',
+  // Deprecated, superseded by list-style
+  '@stylistic/object-curly-spacing': 'off',
+  // Deprecated, superseded by list-style
+  '@stylistic/object-property-newline': 'off',
   // Covered by one-var, which bans multiple declarations
   '@stylistic/one-var-declaration-per-line': 'off',
   '@stylistic/operator-linebreak': ['error', 'before', { overrides: { '=': 'none' } }],

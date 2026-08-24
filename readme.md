@@ -53,7 +53,7 @@ Every existing rule of every plugin is declared — enabled ones as `error`, the
 | `eslint`        | 187 / 187 | 136    | 136        |
 | `typescript`    | 110 / 110 | 92     | 93         |
 | `perfectionist` | 23 / 23   | 20     | 20         |
-| `stylistic`     | 96 / 96   | 65     | 80         |
+| `stylistic`     | 96 / 96   | 58     | 73         |
 | `react`         | 85 / 85   | —      | 54         |
 | `jsx-a11y`      | 36 / 36   | —      | 34         |
 | `react-perf`    | 4 / 4     | —      | 0          |

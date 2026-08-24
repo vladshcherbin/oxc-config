@@ -230,10 +230,7 @@ export default {
       AssignmentExpression: { array: false, object: false },
       VariableDeclarator: { array: false, object: true }
     },
-    {
-      enforceForDeclarationWithTypeAnnotation: true,
-      enforceForRenamedProperties: true
-    }
+    { enforceForDeclarationWithTypeAnnotation: true }
   ],
   'prefer-exponentiation-operator': 'error',
   'prefer-named-capture-group': 'error',

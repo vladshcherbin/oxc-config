@@ -11,6 +11,15 @@ export default defineConfig({
   env: {
     browser: true
   },
+  overrides: [
+    {
+      files: ['src/components/ui/**'],
+      rules: {
+        // Extended to allow shadcn files, which declare many stateless components
+        'react/no-multi-comp': ['error', { ignoreStateless: true }]
+      }
+    }
+  ],
   plugins: [...base.plugins, 'jsx-a11y', 'react', 'react-perf'],
   rules: {
     ...base.rules,
